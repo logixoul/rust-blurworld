@@ -5,7 +5,7 @@ fn blur(in_img:&Image) -> Image{
     let mut out_img = Image::gen_image_color(in_img.width, in_img.height, Color::from_hex(0x808080));
     let w = out_img.width as i32;
     let h = out_img.height as i32;
-*
+
     for x in 0i32..w {
             for y in 0i32..h {
                 let mut sum: f32 = 0.;
